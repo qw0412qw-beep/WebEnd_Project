@@ -9,7 +9,20 @@
 </head>
 
 <body>
+    <h1>오늘의 메뉴 추천</h1>
 
+    <select id="category">
+        <option value="전체메뉴">전체메뉴</option>
+        <option value="한식">한식</option>
+        <option value="일식">일식</option>
+        <option value="중식">중식</option>
+        <option value="패스트푸드">패스트푸드</option>
+        <option value="카페/디저트">카페/디저트</option>
+    </select>
+
+    <button onclick="recommand">랜덤뽑기</button>
+
+    <div id="result"></div>
 </body>
 
 </html>

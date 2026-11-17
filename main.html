@@ -3,26 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-sacle=1.0">
-    <title>올랜덤</title>
+    <title>뽑아뽑아밥묵자</title>
     <link rel="stylesheet" href="style.css">
     <script src ="scripts.js" defer></script>
 </head>
 
 <body>
-    <h1>오늘의 메뉴 추천</h1>
+    <h1>메인 메뉴 추천</h1>
 
-    <select id="category">
+    <select id="category1">
         <option value="전체메뉴">전체메뉴</option>
         <option value="한식">한식</option>
         <option value="일식">일식</option>
         <option value="중식">중식</option>
         <option value="패스트푸드">패스트푸드</option>
-        <option value="카페/디저트">카페/디저트</option>
+
     </select>
 
-    <button onclick="recommand">랜덤뽑기</button>
+    <button onclick="recommand1">랜덤뽑기</button>
 
-    <div id="result"></div>
+    <div id="result1"></div>
+
+    <h1>후식 추천</h1>
+
+    <select id="category2">
+        <option value="전체메뉴">전체메뉴</option>
+        <option value="커피/음료">커피/음료</option>
+        <option value="디저트">디저트</option>
+    </select>
+
+    <button onclick="recommand2">랜덤뽑기</button>
+
+    <div id="result2"></div>
+
 </body>
 
 </html>

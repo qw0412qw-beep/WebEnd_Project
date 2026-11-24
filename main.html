@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-sacle=1.0">
     <title>뽑아뽑아밥묵자</title>
     <link rel="stylesheet" href="style.css">
-    <script src ="scripts.js" defer></script>
 </head>
 
 <body>
+
     <h1>메인 메뉴 추천</h1>
 
     <select id="category1">
@@ -20,7 +20,7 @@
 
     </select>
 
-    <button onclick="recommand1">랜덤뽑기</button>
+    <button id="foodpick">랜덤뽑기</button>
 
     <div id="result1"></div>
 
@@ -32,10 +32,30 @@
         <option value="디저트">디저트</option>
     </select>
 
-    <button onclick="recommand2">랜덤뽑기</button>
+    <button id="dessertpick">랜덤뽑기</button>
 
     <div id="result2"></div>
 
+    <script>
+        let btn1 = document.querySelector("#foodpick");
+        let box1 = document.querySelector("#result1");
+        
+        btn1.addEventListener("click", function () {
+            alert("눌림");
+            box1.textContent = "음식 이름 + 사진 추가";
+            box1.style.color = "black";
+            box1.style.backgroundImage = "url('budaejjigae.png')";
+        });
+
+        let btn2 = document.querySelector("#dessertpick");
+        let box2 = document.querySelector("#result2");
+        
+        btn2.addEventListener("click", function () {
+            alert("눌림");
+            box2.textContent = "음식 이름 + 사진 추가";
+            box2.style.color = "black";
+        });
+    </script>
 </body>
 
 </html>
